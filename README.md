@@ -1,31 +1,5 @@
-# How to use PostgreSQL with Go
+# netlify-go-function-demo [![Netlify Status](https://api.netlify.com/api/v1/badges/a7cd6625-f2c7-4701-b249-c70743234a32/deploy-status)](https://app.netlify.com/sites/go-function-demo/deploys)
 
-SUMMARY: This article covers how to use PostgreSQL together with the programming language Golang (Go). After showing how to get started with Go’s Object Relational Mapper, it offers an example of setting up a PostgreSQL database using Go.
+A simple repo to demonstrate how to launch a Go microservice on Netlify using [Netlify functions](https://functions.netlify.com) and URL rewriting.
 
-1. The connector
-
-2. Getting started
-
-3. A simple example
-
-4. Launch!
-
-<img src="screens/1.png" />
-
-
-Once Go is installed, you’ll need to install GORM and some of its dependencies:
-
-<quote>
-go get github.com/jinzhu/gorm
-
-go get github.com/gorilla/mux
-
-go get github.com/lib/pq
-
-go get github.com/rs/cors
-<quote>
-
-$ curl localhost:8080/cars<br/>
-$ curl localhost:8080/cars/2<br/>
-$ curl -X DELETE localhost:8080/cars/2<br/>
-$ curl localhost:8080/drivers/1 | python -m json.tool<br/>
+[See demo site](https://go-function-demo.netlify.com) and [detailed blog post explanation](https://blog.carlmjohnson.net/post/2020/2020-03-01-how-to-host-golang-on-netlify-for-free/).
